@@ -40,7 +40,14 @@ public class Pessoas implements Comparable<Pessoas> {
         this.altura = altura;
     }
 
-
+    @Override
+    public String toString() {
+        return "Pessoas{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", altura=" + altura +
+                '}';
+    }
 }
 
 class ComparatorPorAltura implements Comparator<Pessoas> {
